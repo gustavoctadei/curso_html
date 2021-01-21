@@ -7,106 +7,119 @@
 </head>
 <body>
     <form method="GET" action="">
-        <div>
-            <label>Email:</label>
-            <input type="email" />
-        </div>
+        <fieldset>
+            <legend>Conta:</legend>
+            <div>
+                <label>Email:</label>
+                <input type="email" />
+            </div>
+            
+            <div>
+                <label>Senha:</label>
+                <input type="password" />
+            </div>
+        </fieldset>
 
-        <div>
-            <label>Senha:</label>
-            <input type="password" />
-        </div>
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <div>
+                <label>Nome</label>
+                <input type="text" placeholder="Ex: Bruno" />
+            </div>
+    
+            <div>
+                <label>Telefone:</label>
+                <input type="text" placeholder="Ex: (99) 99999-9999" />
+            </div>
+    
+            <div>
+                <label>Sexo:</label>
+                <input type="radio" value="masculino" name="sexo" checked />
+                <label>Masculino</label>
+                <input type="radio" value="feminino" name="sexo" />
+                <label>Feminino</label>
+            </div>
+    
+            <div>
+                <label>Data de Nascimento:</label>
+                <input type="date" />
+            </div>
+    
+            <div>
+                <label>Foto de perfil:</label>
+                <input type="file" accept="image/*" />
+            </div>
+        </fieldset>
 
-        <div>
-            <label>Nome</label>
-            <input type="text" placeholder="Ex: Bruno" />
-        </div>
+        <fieldset>
+            <legend>Endereço:</legend>
+            <div>
+                <label>Rua:</label>
+                <input type="text" />
+            </div>
+    
+            <div>
+                <label>Complemento:</label>
+                <input type="text" />
+            </div>
+    
+            <div>
+                <label>Número:</label>
+                <input type="number" min="1" max="9999" />
+            </div>
+    
+            <div>
+                <lab>Cidade:</lab>
+                <input type="text" />
+            </div>
+    
+            <div>
+                <label>Estado:</label>
+                <select>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+        </fieldset>
 
-        <div>
-            <label>Telefone:</label>
-            <input type="text" placeholder="Ex: (99) 99999-9999" />
-        </div>
+        <fieldset>
+            <legend>Anúncio</legend>
+            <div>
+                <label>Como conheceu a Hello Pizza?</label>
+                <textarea maxlength="256" placeholder="Explique para a gente como você conheceu a Hello Pizza"></textarea>
+            </div>
+    
+            <div>
+                <input type="checkbox" checked />
+                <label>Desejo receber ofertas por e-mail</label>
+            </div>
+        </fieldset>
 
-        <div>
-            <label>Sexo:</label>
-            <input type="radio" value="masculino" name="sexo" checked />
-            <label>Masculino</label>
-            <input type="radio" value="feminino" name="sexo" />
-            <label>Feminino</label>
-        </div>
-
-        <div>
-            <label>Data de Nascimento:</label>
-            <input type="date" />
-        </div>
-
-        <div>
-            <label>Foto de perfil:</label>
-            <input type="file" accept="image/*" />
-        </div>
-
-        <div>
-            <label>Rua:</label>
-            <input type="text" />
-        </div>
-
-        <div>
-            <label>Complemento:</label>
-            <input type="text" />
-        </div>
-
-        <div>
-            <label>Número:</label>
-            <input type="number" min="1" max="9999" />
-        </div>
-
-        <div>
-            <lab>Cidade:</lab>
-            <input type="text" />
-        </div>
-
-        <div>
-            <label>Estado:</label>
-            <select>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
-            </select>
-        </div>
-
-        <div>
-            <label>Como conheceu a Hello Pizza?</label>
-            <textarea maxlength="256" placeholder="Explique para a gente como você conheceu a Hello Pizza"></textarea>
-        </div>
-
-        <div>
-            <input type="checkbox" checked />
-            <label>Desejo receber ofertas por e-mail</label>
-        </div>
     </form>
 </body>
 </html>
